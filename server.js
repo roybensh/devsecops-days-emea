@@ -1,12 +1,10 @@
 var express = require('express');
 const bodyParser = require('body-parser');
 const lodash = require('lodash'); 
-Object.freeze(Object.prototype);
 const evilsrc = {constructor: {prototype: {evilkey: "evilvalue"}}};
 lodash.defaultsDeep({}, evilsrc);
 
 var app = express();
-
 var myLogin = "AKIAJXBOVX5Q2EULDUIA";
 var mypwd = "SqcyDpetv+pCsbNYWHDLE8yR5mJ13MI+4d8NOwtM";
 
